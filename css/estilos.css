@@ -1,0 +1,61 @@
+* {
+  margin: 0px;
+  text-decoration: none;
+  font-family: 'Dosis', sans-serif;
+  font-family: 'Leckerli One', cursive;
+  font-family: 'Playfair Display', serif;
+  font-family: 'Quicksand', sans-serif; }
+
+body {
+  background-color: #000000; }
+
+.menu {
+  display: flex;
+  align-items: center;
+  background-color: #00000096;
+  height: 80px; }
+  .menu .menu__logo .logo__nav {
+    color: #ffffff;
+    font-size: 50px;
+    font-family: 'Dosis', sans-serif;
+    font-family: 'Leckerli One', cursive;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Sassy Frass', cursive; }
+  .menu .menu__links {
+    display: flex;
+    justify-content: end; }
+    .menu .menu__links .links__nav {
+      color: #ffffff;
+      font-size: 20px;
+      text-decoration: none;
+      margin-left: 16px; }
+
+.home__carrusel {
+  padding: 0px;
+  margin: 0px;
+  margin-top: 80px; }
+  .home__carrusel .carrusel__titulo {
+    position: sticky; }
+    .home__carrusel .carrusel__titulo .titulo__fuente {
+      font-family: 'Dosis', sans-serif;
+      font-family: 'Leckerli One', cursive;
+      font-family: 'Playfair Display', serif;
+      font-family: 'Quicksand', sans-serif;
+      font-family: 'Sassy Frass', cursive;
+      font-size: 60px; }
+  .home__carrusel .carrusel__letra {
+    font-size: 50px;
+    color: #000000;
+    text-decoration: none;
+    border-style: solid;
+    border-color: #000000;
+    transition: 0.75s; }
+  .home__carrusel .carrusel__letra:hover {
+    color: #ffffff;
+    background-color: #00000096;
+    border-color: #ffffff; }
+
+.section__texto {
+  text-align: center;
+  color: #ffffff; }
