@@ -1,9 +1,14 @@
 //PALETA DE COLORES
+
 $blanco: #ffffff;
 $blancoTrasparente: #ffffff50;
 $negro: #000000;
 $negroTransparente: #00000096;
 $gris: #5e5e5e;
+$verdeManzana: #a2ff28;
+$dorado: #F4d79b;
+
+//GENERAL
 
 *{
     margin: 0px;
@@ -16,11 +21,17 @@ $gris: #5e5e5e;
 body{
     background-color: $negro;
 }
+
+//HEADER
+
 .menu{
     display: flex;
     align-items: center;
     background-color: $negroTransparente;
     height: 80px;
+    border-bottom-style: solid;
+    border-bottom-color: $dorado;
+    border-bottom-width: 0.5px;
     .menu__logo{
         .logo__nav{
             color: $blanco;
@@ -30,6 +41,10 @@ body{
             font-family: 'Playfair Display', serif;
             font-family: 'Quicksand', sans-serif;
             font-family: 'Sassy Frass', cursive;
+            transition: 0.75s;
+        }
+        .logo__nav:hover{
+            color: $dorado;
         }
     }
     .menu__links{
@@ -40,9 +55,73 @@ body{
             font-size: 20px;
             text-decoration: none;
             margin-left: 16px;
+            transition: 0.75s;
+        }
+        .links__nav:hover{
+            color: $dorado;
         }
     }
 }
+
+//FOOTER}
+
+.footer{
+    border-top-style: solid;
+    border-top-color: $dorado;
+    border-top-width: 0.5px;
+    .footer__subtitulo{
+        text-align: center;
+        color: $blanco;
+        margin-top: 40px;
+    }
+    .redes{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        .redes__ig{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .redes__wp{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .redes__fb{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .redes__mail{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .redes__logo{
+            transition: 00.75s;
+        }
+        .redes__logo:hover{
+            transform: scale(1.10);
+        }
+        .redes__texto{
+            color: $blanco;
+            font-style: none;
+            text-decoration: none;
+            font-size: 20px;
+            margin-top: 20px;
+            transition: 0.75s;
+        }
+        .redes__texto:hover{
+            color: $dorado;
+        }
+    }
+}
+
+//INDEX
+
 .home__carrusel{
     padding: 0px;
     margin: 0px;
@@ -75,4 +154,29 @@ body{
 .section__texto{
     text-align: center;
     color: $blanco;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 25px;
+}
+.index__subtitulo{
+    text-align: center;
+    color: $blanco;
+}
+.index__ambiente{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    .ambiente1{
+        width: 40%;
+        display: flex;
+        justify-content: center;
+    }
+    .ambiente2{
+        width: 60%;
+        display: flex;
+        justify-content: center;
+    }
 }
