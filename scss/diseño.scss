@@ -17,6 +17,7 @@ $dorado: #F4d79b;
     font-family: 'Leckerli One', cursive;
     font-family: 'Playfair Display', serif;
     font-family: 'Quicksand', sans-serif;
+    overflow-x: hidden;
 }
 body{
     background-color: $negro;
@@ -119,7 +120,46 @@ body{
 
 //INDEX
 
+.index__fondo{
+    background-image: url("../images/fondo2.jpg");
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .index__titulo{
+        font-family: 'Dosis', sans-serif;
+        font-family: 'Sassy Frass', cursive;
+        font-size: 150px;
+        color: $negro;
+    }
+    .index__subtitulo{
+        font-size: 45px;
+        overflow-y: hidden;
+        color: $negro;
+    }
+    .index__boton{
+        margin-top: 20px;
+        font-size: 35px;
+        color: $negro;
+        text-decoration: none;
+        border-style: solid;
+        border-width: 0.5px;
+        border-color: $negro;
+        transition: 0.75s;
+    }
+    .index__boton:hover{
+        color: $blanco;
+        background-color: $negroTransparente;
+        border-color: $blanco;
+    }
+}
 .home__carrusel{
+    display: none;
     padding: 0px;
     margin: 0px;
     margin-top: 80px;
@@ -160,6 +200,7 @@ body{
     margin-top: 100px;
     display: flex;
     justify-content: center;
+    overflow-y: hidden;
 }
 .cartas{
     margin-top: 20px;
@@ -169,7 +210,26 @@ body{
         .carta__contenido{
             background-color: $negro;
             .contenido__fuente{
-                color:$blanco
+                text-align: center;
+                color:$blanco;
+                font-size: 27px;
+                overflow-y: hidden;
+                .obras__boton{
+                    margin-top: 20px;
+                    text-align: center;
+                    font-size: 22px;
+                    color: $blanco;
+                    background-color: $negroTransparente;
+                    border-color: $blanco;
+                    text-decoration: none;
+                    border-style: solid;
+                    border-width: 0.5px;
+                    transition: 0.75s;
+                }
+                .obras__boton:hover{
+                    color: $negro;
+                    background-color: $blanco;
+                }
             }
         }
     }
@@ -181,10 +241,16 @@ body{
     margin-bottom: 40px;
     display: flex;
     justify-content: center;
+    overflow-y: hidden;
 }
 .acordeon{
     margin-top: 30px;
     background-color: $negro;
+    .acordeon__column{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     .acordeon__boton{
         background-color: $negro;
         color: $blanco;
@@ -197,8 +263,86 @@ body{
         color: $blanco;
         font-size: 18px;
     }
+    .acordeon__subtitulo{
+        color: $blanco;
+    }
 }
 .imagen{
-    border-radius: 5px;
-    margin-left: 20px;
+    border-radius: 3px;
+}
+.inspiracion__subtitulo{
+    text-align: center;
+    font-size: 30px;
+    color: $blanco;
+    overflow-y: hidden;
+}
+.procesos__subtitulo{
+    text-align: center;
+    font-size: 25px;
+    color: $blanco;
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+.proceso{
+    display: flex;
+    justify-content: center;
+    .proceso__forma{
+        width: 40%;
+    }
+}
+.contacto__titulo{
+    margin-top: 100px;
+    color: $blanco;
+    text-align: center;
+    overflow-y: hidden;
+}
+.contacto__subtitulo{
+    color: $blanco;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.contacto__redes{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 120px;
+    margin-bottom: 40px;
+    .contacto__ig{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contacto__wp{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contacto__fb{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contacto__mail{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contacto__logo{
+        transition: 00.75s;
+    }
+    .contacto__logo:hover{
+        transform: scale(1.10);
+    }
+    .contacto__texto{
+        color: $blanco;
+        font-style: none;
+        text-decoration: none;
+        font-size: 20px;
+        margin-top: 20px;
+        transition: 0.75s;
+    }
+    .contacto__texto:hover{
+        color: $dorado;
+    }
 }
