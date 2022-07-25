@@ -10,7 +10,7 @@ $dorado: #F4d79b;
 
 //GENERAL
 
-*{
+* {
     margin: 0px;
     text-decoration: none;
     font-family: 'Dosis', sans-serif;
@@ -19,19 +19,21 @@ $dorado: #F4d79b;
     font-family: 'Quicksand', sans-serif;
     overflow-x: hidden;
 }
-body{
+
+body {
     background-color: $negro;
 }
 
 //HEADER
 
-.menu{
+.menu {
     display: flex;
     align-items: center;
     background-color: $negroTransparente;
     height: 80px;
-    .menu__logo{
-        .logo__nav{
+
+    .menu__logo {
+        .logo__nav {
             color: $blanco;
             font-size: 50px;
             font-family: 'Dosis', sans-serif;
@@ -41,70 +43,151 @@ body{
             font-family: 'Sassy Frass', cursive;
             transition: 0.75s;
         }
-        .logo__nav:hover{
+
+        .logo__nav:hover {
             color: $dorado;
         }
     }
-    .menu__links{
+
+    .menu__links {
         display: flex;
         justify-content: end;
-        .links__nav{
+
+        .links__nav {
             color: $blanco;
             font-size: 20px;
             text-decoration: none;
             margin-left: 16px;
             transition: 0.75s;
         }
-        .links__nav:hover{
+
+        .links__nav:hover {
             color: $dorado;
         }
     }
 }
 
+.menu__chico {
+    display: none;
+    justify-content: center;
+    background-color: $negroTransparente;
+    height: 80px;
+    .chico__logo{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+.menu__interior {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $negroTransparente;
+
+    .menu__logoInterior {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .logo__navChico {
+            color: $blanco;
+            font-size: 50px;
+            font-family: 'Dosis', sans-serif;
+            font-family: 'Leckerli One', cursive;
+            font-family: 'Playfair Display', serif;
+            font-family: 'Quicksand', sans-serif;
+            font-family: 'Sassy Frass', cursive;
+            transition: 0.75s;
+        }
+
+        .logo__navChico:hover {
+            color: $dorado;
+        }
+    }
+}
+
+.menu__linksInterior {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .links__navInterior {
+        color: $blanco;
+        font-size: 20px;
+        text-decoration: none;
+        margin-left: 16px;
+        transition: 0.75s;
+        margin-bottom: 20px;
+    }
+
+    .links__navInterior:hover {
+        color: $dorado;
+    }
+}
+
 //FOOTER}
 
-.footer{
+.footer {
     border-top-style: solid;
     border-top-color: $dorado;
     border-top-width: 0.5px;
-    .footer__subtitulo{
+
+    .footer__subtitulo {
         text-align: center;
         color: $blanco;
         margin-top: 40px;
     }
-    .redes{
+
+    .redes {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
         margin-top: 40px;
         margin-bottom: 40px;
-        .redes__ig{
+        overflow: visible;
+
+        .redes__ig {
             display: flex;
             flex-direction: column;
             align-items: center;
+            overflow: visible;
         }
-        .redes__wp{
+
+        .redes__wp {
             display: flex;
             flex-direction: column;
             align-items: center;
+            overflow: visible;
         }
-        .redes__fb{
+
+        .redes__fb {
             display: flex;
             flex-direction: column;
             align-items: center;
+            overflow: visible;
         }
-        .redes__mail{
+
+        .redes__mail {
             display: flex;
             flex-direction: column;
             align-items: center;
+            overflow: visible;
         }
-        .redes__logo{
+
+        .redes__logo {
             transition: 00.75s;
+            overflow: visible;
         }
-        .redes__logo:hover{
+
+        .redes__logo:hover {
             transform: scale(1.10);
+            overflow: visible;
         }
-        .redes__texto{
+
+        .redes__texto {
             color: $blanco;
             font-style: none;
             text-decoration: none;
@@ -112,7 +195,8 @@ body{
             margin-top: 20px;
             transition: 0.75s;
         }
-        .redes__texto:hover{
+
+        .redes__texto:hover {
             color: $dorado;
         }
     }
@@ -120,7 +204,7 @@ body{
 
 //INDEX
 
-.index__fondo{
+.index__fondo {
     background-image: url("../images/fondo2.jpg");
     min-height: 100vh;
     background-attachment: fixed;
@@ -131,18 +215,23 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    .index__titulo{
+
+    .index__titulo {
         font-family: 'Dosis', sans-serif;
         font-family: 'Sassy Frass', cursive;
         font-size: 150px;
         color: $negro;
+        text-align: center;
     }
-    .index__subtitulo{
+
+    .index__subtitulo {
         font-size: 45px;
         overflow-y: hidden;
         color: $negro;
+        text-align: center;
     }
-    .index__boton{
+
+    .index__boton {
         margin-top: 20px;
         font-size: 35px;
         color: $negro;
@@ -152,40 +241,15 @@ body{
         border-color: $negro;
         transition: 0.75s;
     }
-    .index__boton:hover{
+
+    .index__boton:hover {
         color: $blanco;
         background-color: $negroTransparente;
         border-color: $blanco;
     }
 }
-.home__carrusel{
-    display: none;
-    padding: 0px;
-    margin: 0px;
-    margin-top: 80px;
-    .carrusel__titulo{
-        position: sticky;
-        .titulo__fuente{
-            font-family: 'Dosis', sans-serif;
-            font-family: 'Sassy Frass', cursive;
-            font-size: 60px;
-        }
-    }
-    .carrusel__letra{
-        font-size: 50px;
-        color: $negro;
-        text-decoration: none;
-        border-style: solid;
-        border-color: $negro;
-        transition: 0.75s;
-    }
-    .carrusel__letra:hover{
-        color: $blanco;
-        background-color: $negroTransparente;
-        border-color: $blanco;
-    }
-}
-.section__texto{
+
+.section__texto {
     text-align: center;
     color: $blanco;
     margin-top: 40px;
@@ -194,7 +258,8 @@ body{
     padding-bottom: 15px;
     font-size: 22px;
 }
-.obras__titulo{
+
+.obras__titulo {
     color: $blanco;
     font-size: 45px;
     margin-top: 100px;
@@ -202,19 +267,24 @@ body{
     justify-content: center;
     overflow-y: hidden;
 }
-.cartas{
+
+.cartas {
     margin-top: 20px;
     margin-bottom: 20px;
-    .carta{
+
+    .carta {
         border-color: $negro;
-        .carta__contenido{
+
+        .carta__contenido {
             background-color: $negro;
-            .contenido__fuente{
+
+            .contenido__fuente {
                 text-align: center;
-                color:$blanco;
+                color: $blanco;
                 font-size: 27px;
                 overflow-y: hidden;
-                .obras__boton{
+
+                .obras__boton {
                     margin-top: 20px;
                     text-align: center;
                     font-size: 22px;
@@ -226,7 +296,8 @@ body{
                     border-width: 0.5px;
                     transition: 0.75s;
                 }
-                .obras__boton:hover{
+
+                .obras__boton:hover {
                     color: $negro;
                     background-color: $blanco;
                 }
@@ -234,7 +305,8 @@ body{
         }
     }
 }
-.inspiracion__titulo{
+
+.inspiracion__titulo {
     color: $blanco;
     font-size: 45px;
     margin-top: 100px;
@@ -243,15 +315,18 @@ body{
     justify-content: center;
     overflow-y: hidden;
 }
-.acordeon{
+
+.acordeon {
     margin-top: 30px;
     background-color: $negro;
-    .acordeon__column{
+
+    .acordeon__column {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .acordeon__boton{
+
+    .acordeon__boton {
         background-color: $negro;
         color: $blanco;
         font-size: 20px;
@@ -259,90 +334,208 @@ body{
         border-width: 0.5px;
         border-color: $blanco;
     }
-    .acordeon__texto{
+
+    .acordeon__texto {
         color: $blanco;
         font-size: 18px;
     }
-    .acordeon__subtitulo{
+
+    .acordeon__subtitulo {
         color: $blanco;
     }
 }
-.imagen{
+
+.imagen {
     border-radius: 3px;
 }
-.inspiracion__subtitulo{
+
+.inspiracion__subtitulo {
     text-align: center;
     font-size: 30px;
     color: $blanco;
     overflow-y: hidden;
 }
-.procesos__subtitulo{
+
+.procesos__subtitulo {
     text-align: center;
     font-size: 25px;
     color: $blanco;
     margin-top: 30px;
     margin-bottom: 25px;
 }
-.proceso{
+
+.proceso {
     display: flex;
     justify-content: center;
-    .proceso__forma{
+
+    .proceso__forma {
         width: 40%;
     }
 }
-.contacto__titulo{
+
+.contacto__titulo {
     margin-top: 100px;
     color: $blanco;
     text-align: center;
     overflow-y: hidden;
 }
-.contacto__subtitulo{
+
+.contacto__subtitulo {
     color: $blanco;
     text-align: center;
     margin-top: 80px;
     margin-bottom: 80px;
+    overflow-y: hidden;
 }
-.contacto__redes{
+
+.contacto__redes {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     margin-top: 120px;
     margin-bottom: 40px;
-    .contacto__ig{
+
+    .contacto__ig {
         display: flex;
         flex-direction: column;
         align-items: center;
+        overflow: visible;
     }
-    .contacto__wp{
+
+    .contacto__wp {
         display: flex;
         flex-direction: column;
         align-items: center;
+        overflow: visible;
     }
-    .contacto__fb{
+
+    .contacto__fb {
         display: flex;
         flex-direction: column;
         align-items: center;
+        overflow: visible;
     }
-    .contacto__mail{
+
+    .contacto__mail {
         display: flex;
         flex-direction: column;
         align-items: center;
+        overflow: visible;
     }
-    .contacto__logo{
+
+    .contacto__logo {
         transition: 00.75s;
+        overflow: visible;
     }
-    .contacto__logo:hover{
+
+    .contacto__logo:hover {
         transform: scale(1.10);
+        overflow: visible;
     }
-    .contacto__texto{
+
+    .contacto__texto {
         color: $blanco;
         font-style: none;
         text-decoration: none;
         font-size: 20px;
         margin-top: 20px;
         transition: 0.75s;
+        overflow-y: hidden;
     }
-    .contacto__texto:hover{
+
+    .contacto__texto:hover {
         color: $dorado;
+    }
+}
+
+@media (max-width:850px) {
+    .redes__texto {
+        display: none;
+    }
+
+    .index__titulo {
+        font-size: 100px;
+    }
+
+    .index__subtitulo {
+        font-size: 35px;
+    }
+}
+@media (max-width:800px){
+    .contacto__redes{
+        flex-direction: column;
+        align-items: center;
+        .contacto__ig {
+            margin-bottom: 40px;
+        }
+    
+        .contacto__wp {
+            margin-bottom: 40px;
+        }
+    
+        .contacto__fb {
+            margin-bottom: 40px;
+        }
+    
+        .contacto__mail {
+            margin-bottom: 40px;
+        }
+    }
+}
+@media (max-width:760px) {
+    .menu__chico{
+        display: flex;
+    }
+    .menu{
+        display: none;
+    }
+}
+@media (max-width:550px) {
+    .redes {
+        flex-direction: column;
+        margin-top: 40px;
+        margin-bottom: 0px;
+        overflow: visible;
+
+        .redes__ig {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow: visible;
+        }
+
+        .redes__wp {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow: visible;
+        }
+
+        .redes__fb {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow: visible;
+        }
+
+        .redes__mail {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow: visible;
+        }
+
+        .redes__texto {
+            display: inline;
+            margin-bottom: 40px;
+        }
+    }
+
+    .index__titulo {
+        font-size: 60px;
+    }
+
+    .index__subtitulo {
+        font-size: 25px;
     }
 }

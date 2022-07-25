@@ -38,6 +38,53 @@ body {
     .menu .menu__links .links__nav:hover {
       color: #F4d79b; }
 
+.menu__chico {
+  display: none;
+  justify-content: center;
+  background-color: #000000d0;
+  height: 80px; }
+  .menu__chico .chico__logo {
+    display: flex;
+    justify-content: center;
+    width: 100%; }
+
+.menu__interior {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000d0; }
+  .menu__interior .menu__logoInterior {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .menu__interior .menu__logoInterior .logo__navChico {
+      color: #ffffff;
+      font-size: 50px;
+      font-family: 'Dosis', sans-serif;
+      font-family: 'Leckerli One', cursive;
+      font-family: 'Playfair Display', serif;
+      font-family: 'Quicksand', sans-serif;
+      font-family: 'Sassy Frass', cursive;
+      transition: 0.75s; }
+    .menu__interior .menu__logoInterior .logo__navChico:hover {
+      color: #F4d79b; }
+
+.menu__linksInterior {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .menu__linksInterior .links__navInterior {
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+    margin-left: 16px;
+    transition: 0.75s;
+    margin-bottom: 20px; }
+  .menu__linksInterior .links__navInterior:hover {
+    color: #F4d79b; }
+
 .footer {
   border-top-style: solid;
   border-top-color: #F4d79b;
@@ -51,27 +98,34 @@ body {
     justify-content: space-evenly;
     align-items: center;
     margin-top: 40px;
-    margin-bottom: 40px; }
+    margin-bottom: 40px;
+    overflow: visible; }
     .footer .redes .redes__ig {
       display: flex;
       flex-direction: column;
-      align-items: center; }
+      align-items: center;
+      overflow: visible; }
     .footer .redes .redes__wp {
       display: flex;
       flex-direction: column;
-      align-items: center; }
+      align-items: center;
+      overflow: visible; }
     .footer .redes .redes__fb {
       display: flex;
       flex-direction: column;
-      align-items: center; }
+      align-items: center;
+      overflow: visible; }
     .footer .redes .redes__mail {
       display: flex;
       flex-direction: column;
-      align-items: center; }
+      align-items: center;
+      overflow: visible; }
     .footer .redes .redes__logo {
-      transition: 00.75s; }
+      transition: 00.75s;
+      overflow: visible; }
     .footer .redes .redes__logo:hover {
-      transform: scale(1.1); }
+      transform: scale(1.1);
+      overflow: visible; }
     .footer .redes .redes__texto {
       color: #ffffff;
       font-style: none;
@@ -97,11 +151,13 @@ body {
     font-family: 'Dosis', sans-serif;
     font-family: 'Sassy Frass', cursive;
     font-size: 150px;
-    color: #000000; }
+    color: #000000;
+    text-align: center; }
   .index__fondo .index__subtitulo {
     font-size: 45px;
     overflow-y: hidden;
-    color: #000000; }
+    color: #000000;
+    text-align: center; }
   .index__fondo .index__boton {
     margin-top: 20px;
     font-size: 35px;
@@ -112,29 +168,6 @@ body {
     border-color: #000000;
     transition: 0.75s; }
   .index__fondo .index__boton:hover {
-    color: #ffffff;
-    background-color: #000000d0;
-    border-color: #ffffff; }
-
-.home__carrusel {
-  display: none;
-  padding: 0px;
-  margin: 0px;
-  margin-top: 80px; }
-  .home__carrusel .carrusel__titulo {
-    position: sticky; }
-    .home__carrusel .carrusel__titulo .titulo__fuente {
-      font-family: 'Dosis', sans-serif;
-      font-family: 'Sassy Frass', cursive;
-      font-size: 60px; }
-  .home__carrusel .carrusel__letra {
-    font-size: 50px;
-    color: #000000;
-    text-decoration: none;
-    border-style: solid;
-    border-color: #000000;
-    transition: 0.75s; }
-  .home__carrusel .carrusel__letra:hover {
     color: #ffffff;
     background-color: #000000d0;
     border-color: #ffffff; }
@@ -244,7 +277,8 @@ body {
   color: #ffffff;
   text-align: center;
   margin-top: 80px;
-  margin-bottom: 80px; }
+  margin-bottom: 80px;
+  overflow-y: hidden; }
 
 .contacto__redes {
   display: flex;
@@ -255,29 +289,97 @@ body {
   .contacto__redes .contacto__ig {
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    overflow: visible; }
   .contacto__redes .contacto__wp {
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    overflow: visible; }
   .contacto__redes .contacto__fb {
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    overflow: visible; }
   .contacto__redes .contacto__mail {
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    overflow: visible; }
   .contacto__redes .contacto__logo {
-    transition: 00.75s; }
+    transition: 00.75s;
+    overflow: visible; }
   .contacto__redes .contacto__logo:hover {
-    transform: scale(1.1); }
+    transform: scale(1.1);
+    overflow: visible; }
   .contacto__redes .contacto__texto {
     color: #ffffff;
     font-style: none;
     text-decoration: none;
     font-size: 20px;
     margin-top: 20px;
-    transition: 0.75s; }
+    transition: 0.75s;
+    overflow-y: hidden; }
   .contacto__redes .contacto__texto:hover {
     color: #F4d79b; }
+
+@media (max-width: 850px) {
+  .redes__texto {
+    display: none; }
+  .index__titulo {
+    font-size: 100px; }
+  .index__subtitulo {
+    font-size: 35px; } }
+
+@media (max-width: 800px) {
+  .contacto__redes {
+    flex-direction: column;
+    align-items: center; }
+    .contacto__redes .contacto__ig {
+      margin-bottom: 40px; }
+    .contacto__redes .contacto__wp {
+      margin-bottom: 40px; }
+    .contacto__redes .contacto__fb {
+      margin-bottom: 40px; }
+    .contacto__redes .contacto__mail {
+      margin-bottom: 40px; } }
+
+@media (max-width: 760px) {
+  .menu__chico {
+    display: flex; }
+  .menu {
+    display: none; } }
+
+@media (max-width: 550px) {
+  .redes {
+    flex-direction: column;
+    margin-top: 40px;
+    margin-bottom: 0px;
+    overflow: visible; }
+    .redes .redes__ig {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      overflow: visible; }
+    .redes .redes__wp {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      overflow: visible; }
+    .redes .redes__fb {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      overflow: visible; }
+    .redes .redes__mail {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      overflow: visible; }
+    .redes .redes__texto {
+      display: inline;
+      margin-bottom: 40px; }
+  .index__titulo {
+    font-size: 60px; }
+  .index__subtitulo {
+    font-size: 25px; } }
